@@ -3,7 +3,7 @@ require('Siswa.php');
 class SiswaRpl extends Siswa{
     var $JuduLap;
     function __construct(){
-        parent::__construct();
+        // parent::__construct();
         $this->JudulLap = "Laporan Prakerin";
     }
 

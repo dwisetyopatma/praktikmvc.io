@@ -1,5 +1,5 @@
 <?php
-class Model1Siswa{
+class ModelSiswa{
     public function InsertSiswa($data){
         $sql="INSERT INTO siswa (nis,nama,tahun,kota)
             VALUES ('".$data->nis."','"
