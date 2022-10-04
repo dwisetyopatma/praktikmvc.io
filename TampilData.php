@@ -2,7 +2,7 @@
     <head></head>
     <body bgcolor='#A3E4D7'>
         <?php
-        echo $cetak;
+        echo $txt;
         ?>
     </body>
 </html>    

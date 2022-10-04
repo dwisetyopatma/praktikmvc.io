@@ -23,13 +23,13 @@ class siswa{
     }
 
     public function CetakData(){
-        $txt="----------------------------------------------</br>";
+        $txt ="----------------------------------------------</br>";
         $txt.="NIS Siswa ".$this->nis."</br>";
         $txt.="Nama Siswa ".$this->nama."</br>";
         $txt.="Tahun Lahir Siswa ".$this->tahun."</br>";
         $txt.="Kota Asal Siswa ".$this->kota."</br>";
         $txt.="Umur Siswa ".$this->HitungUmur()."</br>";
-        $txt="----------------------------------------------</br>";
+        $txt .="----------------------------------------------</br>";
         require('TampilData.php');
     }
 
@@ -54,14 +54,14 @@ public function InputForm(){
 
         require ('Koneksi.php');
         $modelssw=new ModelSiswa();
-        $sql=$modelssw->InsertSIswa($this);
+        $sql=$modelssw->InsertSiswa($this);
         if($conn->query($sql)===TRUE){
             echo "Data berhasil masuk";
         } else {
             echo "error".$sql."</br>".$conn->error;
         }
     } else {
-              $Cetak=$FormSiswa->DisplayForm();
+              $cetak=$FormSiswa->DisplayForm();
               require('TampilForm.php');
            }
      // else {

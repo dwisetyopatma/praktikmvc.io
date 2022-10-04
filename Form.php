@@ -11,7 +11,7 @@ class Form {
     }
 
     function DisplayForm(){
-        $txt="<form action='".$this->action."'method='post'>";
+        $txt ="<form action='".$this->action."'method='post'>";
         $txt.="<table width = '100%'>";
         for ($i=0;$i<$this->jumpfield;$i++)
             {
